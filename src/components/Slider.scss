@@ -1,51 +1,49 @@
-/* Slider Container */
+
 .slider-container {
   position: relative;
   width: 20%;
   margin: 20px 0;
 }
 
-/* Slider Wrapper */
+
 .slider-wrapper {
   position: relative;
-  height: 20px; /* Adjust according to the size of the handles */
+  height: 20px; 
 }
 
-/* Track (for range sliders) */
+
 .slider-track {
   position: absolute;
   top: 50%;
   left: 0;
   height: 10px;
-  background: #ddd; /* Default track color */
+  background: #ddd; 
   border-radius: 5px;
   z-index: 1;
   width: 100%;
   transform: translateY(-50%);
 }
 
-/* Range Track (between handles) */
 .slider-range-track {
   position: absolute;
   top: 50%;
   left: 0;
   height: 10px;
-  background: #4CAF50; /* Green track color */
+  background: #4CAF50; 
   border-radius: 5px;
   z-index: 1;
   transform: translateY(-50%);
 }
 
-/* Slider Handles */
 .slider-handle {
   position: absolute;
-  width: 16px; /* Size of the handle */
+  width: 16px;
   height: 16px;
-  background: #fff; /* Handle background color */
-  border: 2px solid #4CAF50; /* Handle border color */
+  background: #fff; 
+  border: 2px solid #4CAF50; 
   border-radius: 50%;
-  z-index: 4; /* Handles should be above the track */
-  cursor: pointer; /* Indicate that it's draggable */
+  z-index: 4; 
+  cursor: pointer; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,15 +57,14 @@
   z-index: 3;
 }
 
-/* Inner Dot Inside Handle */
 .handle-inner-dot {
   width: 8px;
   height: 8px;
-  background: #4CAF50; /* Inner dot color */
+  background: #4CAF50; 
   border-radius: 50%;
 }
 
-/* Tooltip */
+
 .tooltip {
   position: absolute;
   top: 100%;
@@ -80,7 +77,6 @@
   font-size: 12px;
 }
 
-/* Slider Input (Hidden but Required for Functionality) */
 .slider {
   position: absolute;
   width: 100%;
@@ -89,7 +85,7 @@
   pointer-events: none;
 }
 
-/* Slider Active and Hover States */
+
 .slider-track.active {
   background: #4CAF50;
 }
@@ -98,60 +94,60 @@
   background: rgba(76, 175, 80, 0.2);
 }
 
-/* Specific styles for type = discreet */
+
 .slider.discreet .slider-track {
-  background: #ddd; /* Track color for discreet type */
+  background: #ddd; 
 }
 
-/* Dots for Discreet Type */
+
 .slider-dot {
   position: absolute;
   width: 8px;
   height: 8px;
-  background: #4CAF50; /* Dot color */
+  background: #4CAF50; 
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2; /* Ensure dots are on the track */
+  z-index: 2; 
 }
 
 .slider-dot.active {
-  background: #fff; /* Color when the dot is crossed */
+  background: #fff; 
 }
 
-/* Specific styles for subtype = single */
+
 .slider.single {
   position: relative;
 }
 
 .slider.single .slider-track {
-  background: transparent; /* Hide the default track for single subtype */
+  background: transparent;
 }
 
 .slider.single .slider-handle {
-  width: 24px; /* Larger size for single handle */
+  width: 24px; 
   height: 24px;
-  background: #4CAF50; /* Handle background color */
-  border: none; /* Remove border for single handle */
+  background: #4CAF50;
+  border: none; 
 }
 
 .slider.single .handle-inner-dot {
-  width: 12px; /* Larger inner dot */
+  width: 12px; 
   height: 12px;
-  background: #fff; /* Inner dot color */
-  border: none; /* Remove border for inner dot */
+  background: #fff; 
+  border: none; 
 }
 
-/* Specific styles for subtype = range */
+
 .slider.range {
   position: relative;
 }
 
 .slider.range .slider-track {
-  background: transparent; /* Hide the default track for range subtype */
+  background: transparent; 
 }
 
 .slider.range .slider-range-track {
-  height: 10px; /* Ensure it matches the track height */
+  height: 10px; 
   border-radius: 5px;
-  z-index: 2; /* Place below the handles */
+  z-index: 2; 
 }
